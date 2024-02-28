@@ -1,0 +1,8 @@
+service: () -> {
+    deleteGame: (record {id:principal}) -> (variant {Ok:text; Err:variant {GameNotFound:principal}});
+    getGameById: (principal) -> (opt record {id:principal; title:text; createdDate:text; description:text; stock:int64; price:int64}) query;
+    getGameCount: () -> (nat64) query;
+    getGames: () -> (vec record {id:principal; title:text; createdDate:text; description:text; stock:int64; price:int64}) query;
+    insertGame: (record {title:text; description:text; stock:int64; price:int64}) -> (record {id:principal; title:text; createdDate:text; description:text; stock:int64; price:int64});
+    updateGame: (record {id:principal; title:text; createdDate:text; description:text; stock:int64; price:int64}) -> (variant {Ok:text; Err:variant {GameNotFound:principal}});
+}

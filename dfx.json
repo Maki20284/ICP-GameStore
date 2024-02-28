@@ -1,0 +1,20 @@
+{
+  "canisters": {
+    "gameStore_backend": {
+      "build": "npx azle gameStore_backend",
+      "candid": "src/gameStore_backend/gameStore_backend.did",
+      "gzip": true,
+      "main": "src/gameStore_backend/src/index.ts",
+      "type": "custom",
+      "wasm": ".azle/gameStore_backend/gameStore_backend.wasm"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

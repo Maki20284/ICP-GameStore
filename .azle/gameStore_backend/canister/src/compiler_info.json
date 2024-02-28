@@ -1,0 +1,1 @@
+{"canister_methods":{"queries":[{"name":"getGameCount","composite":false},{"name":"getGameById","composite":false},{"name":"getGames","composite":false}],"updates":[{"name":"insertGame"},{"name":"deleteGame"},{"name":"updateGame"}],"callbacks":{}}}
